@@ -5,7 +5,7 @@
 
   try {
     //WidgetChart 1
-    var ctx = document.getElementById("widgetChart1");
+    var ctx = document.getElementById("widget-employee-headcount");
     if (ctx) {
       ctx.height = 130;
       var myChart = new Chart(ctx, {
@@ -71,7 +71,7 @@
 
 
     //WidgetChart 2
-    var ctx = document.getElementById("widgetChart2");
+    var ctx = document.getElementById("widget-absenteism-rate");
     if (ctx) {
       ctx.height = 130;
       var myChart = new Chart(ctx, {
@@ -142,7 +142,7 @@
 
 
     //WidgetChart 3
-    var ctx = document.getElementById("widgetChart3");
+    var ctx = document.getElementById("widget-missing-employees");
     if (ctx) {
       ctx.height = 130;
       var myChart = new Chart(ctx, {
@@ -212,7 +212,7 @@
 
 
     //WidgetChart 4
-    var ctx = document.getElementById("widgetChart4");
+    var ctx = document.getElementById("widget-absenteism-costs");
     if (ctx) {
       ctx.height = 115;
       var myChart = new Chart(ctx, {
@@ -332,7 +332,7 @@
     }
 
     // Percent Chart
-    var ctx = document.getElementById("percent-chart");
+    var ctx = document.getElementById("percent-chart-gender");
     if (ctx) {
       ctx.height = 280;
       var myChart = new Chart(ctx, {
@@ -340,7 +340,7 @@
         data: {
           datasets: [
             {
-              label: "My First dataset",
+              label: "Répartition par sexe",
               data: [60, 40],
               backgroundColor: [
                 '#00b5e9',
@@ -360,8 +360,8 @@
             }
           ],
           labels: [
-            'Products',
-            'Services'
+            'Femmes',
+            'Hommes'
           ]
         },
         options: {
@@ -572,6 +572,124 @@
       });
     }
 
+  } catch (error) {
+    console.log(error);
+  }
+
+  try {
+
+      var gdpData = {
+        "FR-01": 0.009476876,
+        "FR-02": 0.011561789,
+        "FR-03": 0.018764215,
+        "FR-04": 0.00075815,
+        "FR-05": 0.013457165,
+        "FR-06": 0.013078089,
+        "FR-07": 0.013646702,
+        "FR-08": 0.014973465,
+        "FR-09": 0.014215315,
+        "FR-10": 0.01762699,
+        "FR-11": 0.013457165,
+        "FR-12": 0.010235027,
+        "FR-13": 0.010614102,
+        "FR-14": 0.01611069,
+        "FR-15": 0.003222138,
+        "FR-16": 0.008339651,
+        "FR-17": 0.016300227,
+        "FR-18": 0.010803639,
+        "FR-19": 0.008529189,
+        "FR-2A": 0.015921152,
+        "FR-2B": 0.009476876,
+        "FR-21": 0.010235027,
+        "FR-22": 0.017058378,
+        "FR-23": 0.001137225,
+        "FR-24": 0.011372252,
+        "FR-25": 0.013646702,
+        "FR-26": 0.002653525,
+        "FR-27": 0.016489765,
+        "FR-28": 0.003790751,
+        "FR-29": 0.017058378,
+        "FR-30": 0.010045489,
+        "FR-31": 0.010235027,
+        "FR-32": 0.017247915,
+        "FR-33": 0.01383624,
+        "FR-34": 0.012509477,
+        "FR-35": 0.009476876,
+        "FR-36": 0.003601213,
+        "FR-37": 0.018574678,
+        "FR-38": 0.016300227,
+        "FR-39": 0.009287339,
+        "FR-40": 0.011561789,
+        "FR-41": 0.012699014,
+        "FR-42": 0.00227445,
+        "FR-43": 0.01611069,
+        "FR-44": 0.007202426,
+        "FR-45": 0.017058378,
+        "FR-46": 0.011751327,
+        "FR-47": 0.006633813,
+        "FR-48": 0.003601213,
+        "FR-49": 0.002843063,
+        "FR-50": 0.018764215,
+        "FR-51": 0.007960576,
+        "FR-52": 0.010803639,
+        "FR-53": 0.006444276,
+        "FR-54": 0.002843063,
+        "FR-55": 0.017437453,
+        "FR-56": 0.016489765,
+        "FR-57": 0.000568613,
+        "FR-58": 0.000568613,
+        "FR-59": 0.016679303,
+        "FR-60": 0.002084913,
+        "FR-61": 0.009666414,
+        "FR-62": 0.000379075,
+        "FR-63": 0.001137225,
+        "FR-64": 0.008339651,
+        "FR-65": 0.003790751,
+        "FR-66": 0.013267627,
+        "FR-67": 0.008339651,
+        "FR-68": 0.013078089,
+        "FR-69": 0.014025777,
+        "FR-70": 0.008150114,
+        "FR-71": 0.008718726,
+        "FR-72": 0.004169826,
+        "FR-73": 0.017816528,
+        "FR-74": 0.009855951,
+        "FR-75": 0.00075815,
+        "FR-76": 0.007012889,
+        "FR-77": 0.01535254,
+        "FR-78": 0.007012889,
+        "FR-79": 0.001705838,
+        "FR-80": 0.017058378,
+        "FR-81": 0.006444276,
+        "FR-82": 0.017247915,
+        "FR-83": 0.018195603,
+        "FR-84": 0.000568613,
+        "FR-85": 0.009666414,
+        "FR-86": 0.01383624,
+        "FR-87": 0.010614102,
+        "FR-88": 0.001705838,
+        "FR-89": 0.012509477,
+        "FR-90": 0.018953753,
+        "FR-91": 0.01762699,
+        "FR-92": 0.005496588,
+        "FR-93": 0.01838514,
+        "FR-94": 0.01762699,
+        "FR-95": 0.003980288
+      }
+
+      $('#demo-geo').vectorMap({
+        map: 'fr_mill',
+        backgroundColor: 'white',
+        series: {
+          regions: [{
+            values: gdpData,
+            scale: ['#C8EEFF', '#0071A4']
+          }]
+        },
+        onRegionTipShow: function(e, el, code){
+          el.html(el.html()+' (GDP - '+gdpData[code]+')');
+        }
+      });
   } catch (error) {
     console.log(error);
   }
@@ -1201,17 +1319,17 @@
   try {
 
     // single bar chart
-    var ctx = document.getElementById("singelBarChart");
+    var ctx = document.getElementById("csp-split-graph");
     if (ctx) {
       ctx.height = 150;
       var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: ["Sun", "Mon", "Tu", "Wed", "Th", "Fri", "Sat"],
+          labels: ["Cadres", "ETAM", "Ouvriers"],
           datasets: [
             {
-              label: "My First dataset",
-              data: [40, 55, 75, 81, 56, 55, 40],
+              label: "CSP",
+              data: [34, 40, 26],
               borderColor: "rgba(0, 123, 255, 0.9)",
               borderWidth: "0",
               backgroundColor: "rgba(0, 123, 255, 0.5)"
@@ -1380,15 +1498,125 @@
   // France Map
   try {
     
+    var gdpData = {
+      "FR-01": 0.007042254,
+      "FR-02": 0.007042254,
+      "FR-03": 0.007042254,
+      "FR-04": 0,
+      "FR-05": 0,
+      "FR-06": 0,
+      "FR-07": 0,
+      "FR-08": 0.014084507,
+      "FR-09": 0.014084507,
+      "FR-10": 0.014084507,
+      "FR-11": 0,
+      "FR-12": 0,
+      "FR-13": 0,
+      "FR-14": 0,
+      "FR-15": 0.007042254,
+      "FR-16": 0,
+      "FR-17": 0,
+      "FR-18": 0,
+      "FR-19": 0,
+      "FR-2A": 0,
+      "FR-2B": 0,
+      "FR-21": 0,
+      "FR-22": 0,
+      "FR-23": 0,
+      "FR-24": 0.007042254,
+      "FR-25": 0,
+      "FR-26": 0.014084507,
+      "FR-27": 0.007042254,
+      "FR-28": 0,
+      "FR-29": 0,
+      "FR-30": 0.028169014,
+      "FR-31": 0.084507042,
+      "FR-32": 0.007042254,
+      "FR-33": 0.007042254,
+      "FR-34": 0,
+      "FR-35": 0,
+      "FR-36": 0,
+      "FR-37": 0,
+      "FR-38": 0,
+      "FR-39": 0,
+      "FR-40": 0,
+      "FR-41": 0.014084507,
+      "FR-42": 0,
+      "FR-43": 0,
+      "FR-44": 0,
+      "FR-45": 0,
+      "FR-46": 0.007042254,
+      "FR-47": 0.007042254,
+      "FR-48": 0.007042254,
+      "FR-49": 0,
+      "FR-50": 0,
+      "FR-51": 0,
+      "FR-52": 0.014084507,
+      "FR-53": 0.021126761,
+      "FR-54": 0.042253521,
+      "FR-55": 0,
+      "FR-56": 0,
+      "FR-57": 0,
+      "FR-58": 0,
+      "FR-59": 0.007042254,
+      "FR-60": 0,
+      "FR-61": 0,
+      "FR-62": 0,
+      "FR-63": 0,
+      "FR-64": 0,
+      "FR-65": 0.056338028,
+      "FR-66": 0.035211268,
+      "FR-67": 0,
+      "FR-68": 0,
+      "FR-69": 0,
+      "FR-70": 0,
+      "FR-71": 0,
+      "FR-72": 0,
+      "FR-73": 0,
+      "FR-74": 0,
+      "FR-75": 0,
+      "FR-76": 0,
+      "FR-77": 0,
+      "FR-78": 0.007042254,
+      "FR-79": 0.021126761,
+      "FR-80": 0,
+      "FR-81": 0,
+      "FR-82": 0,
+      "FR-83": 0,
+      "FR-84": 0,
+      "FR-85": 0.028169014,
+      "FR-86": 0.014084507,
+      "FR-87": 0.007042254,
+      "FR-88": 0,
+      "FR-89": 0,
+      "FR-90": 0,
+      "FR-91": 0.028169014,
+      "FR-92": 176056338,
+      "FR-93": 105633803,
+      "FR-94": 154929577,
+      "FR-95": 0.021126761
+    };
     var vmap4 = $('#vmap4');
     if(vmap4[0]) {
       vmap4.vectorMap( {
         map: 'france_fr',
-        color: '#007BFF',
+        series: {
+          regions: [{
+            values: gdpData,
+            scale: ['#C8EEFF', '#0071A4'],
+            normalizeFunction: 'polynomial'
+          }]
+        },
+        /*color: '#007BFF',
         borderColor: '#fff',
         backgroundColor: '#fff',
         enableZoom: true,
-        showTooltip: true
+        showTooltip: true,*/
+        onRegionClick: function ( element, code, region ) {
+            var message = 'You clicked "' + region + '" which has the code: ' + code.toUpperCase();
+
+            alert( message );
+        }
       });
     }
 

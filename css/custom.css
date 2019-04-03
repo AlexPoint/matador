@@ -20,3 +20,8 @@
     max-height: 30px;
     margin-right: 15px;
 }
+
+#demo-geo {
+	height: 250px;
+    width: 100%;
+}

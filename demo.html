@@ -188,7 +188,7 @@
                                 </li>
                             </ul>
                         </li> -->
-                        <li class="active">
+                        <li>
                             <a href="index.html">
                                 <i class="fas fa-calendar-alt"></i>Situation actuelle</a>
                         </li>
@@ -196,7 +196,7 @@
                             <a href="chart.html">
                                 <i class="fas fa-chart-bar"></i>Absentéisme</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="demo.html">
                                 <i class="fas fa-table"></i>Démographie</a>
                         </li>
@@ -457,7 +457,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Situation au 31 mars 2019</h2>
+                                    <h2 class="title-1">Démographie au 31 mars 2019</h2>
                                     <!-- <button class="au-btn au-btn-icon au-btn--blue">
                                         <i class="zmdi zmdi-plus"></i>add item</button> -->
                                 </div>
@@ -490,8 +490,8 @@
                                                 <i class="zmdi zmdi-flip-to-back"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>4,8%</h2>
-                                                <span>taux d'absentéisme moyen (mars)</span>
+                                                <h2>40,5</h2>
+                                                <span>ans d'âge moyen</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -508,8 +508,8 @@
                                                 <i class="zmdi zmdi-block"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>1,103</h2>
-                                                <span>employés en arrêt au 31 mars</span>
+                                                <h2>12,3</h2>
+                                                <span>années d'ancienneté</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -526,8 +526,8 @@
                                                 <i class="zmdi zmdi-money-off"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>1,360,386€</h2>
-                                                <span>coût estimé des AT pour le mois de mars</span>
+                                                <h2>20,543</h2>
+                                                <span>employés avec plus de 1 an d'ancienneté</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -537,8 +537,52 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="row">
+                        <div class="row">
                             <div class="col-lg-6">
+                                <div class="au-card chart-percent-card">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 tm-b-5">Sexe</h3>
+                                        <div class="row no-gutters">
+                                            <div class="col-xl-6">
+                                                <div class="chart-note-wrap">
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--blue"></span>
+                                                        <span>femmes</span>
+                                                    </div>
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--red"></span>
+                                                        <span>hommes</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="percent-chart">
+                                                    <canvas id="percent-chart-gender"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Catégories socioprofessionnelles</h3>
+                                        <canvas id="csp-split-graph"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="au-card recent-report">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Répartition géographique</h3>
+                                        <div id="demo-geo"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-6">
                                 <div class="au-card recent-report">
                                     <div class="au-card-inner">
                                         <h3 class="title-2">recent reports</h3>
@@ -571,162 +615,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="au-card chart-percent-card">
-                                    <div class="au-card-inner">
-                                        <h3 class="title-2 tm-b-5">char by %</h3>
-                                        <div class="row no-gutters">
-                                            <div class="col-xl-6">
-                                                <div class="chart-note-wrap">
-                                                    <div class="chart-note mr-0 d-block">
-                                                        <span class="dot dot--blue"></span>
-                                                        <span>products</span>
-                                                    </div>
-                                                    <div class="chart-note mr-0 d-block">
-                                                        <span class="dot dot--red"></span>
-                                                        <span>services</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="percent-chart">
-                                                    <canvas id="percent-chart"></canvas>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="row">
-                            <div class="col-lg-9">
-                                <h2 class="title-1 m-b-25">Dernières données reçues</h2>
-                                <div class="table-responsive table--no-card m-b-40">
-                                    <table class="table table-borderless table-striped table-earning">
-                                        <thead>
-                                            <tr>
-                                                <th>date</th>
-                                                <th>données</th>
-                                                <th class="text-right">nb de lignes</th>
-                                                <!-- <th class="text-right">quantity</th>
-                                                <th class="text-right">total</th> -->
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>2019-05-15 06:50</td>
-                                                <td>Données DSN du mois de mars 2019</td>
-                                                <td class="text-right">64,543</td>
-                                                <!-- <td class="text-right">$999.00</td>
-                                                <td class="text-right">1</td>
-                                                <td class="text-right">$999.00</td> -->
-                                            </tr>
-                                            <tr>
-                                                <td>2019-04-14 09:56</td>
-                                                <td>Données DSN du mois de février 2019</td>
-                                                <td class="text-right">65,798</td>
-                                                <!-- <td class="text-right">$756.00</td>
-                                                <td class="text-right">1</td>
-                                                <td class="text-right">$756.00</td> -->
-                                            </tr>
-                                            <tr>
-                                                <td>2019-03-26 03:12</td>
-                                                <td>Données DSN du mois de janvier 2019 - complément #2</td>
-                                                <td class="text-right">5,701</td>
-                                                <!-- <td class="text-right">$22.00</td>
-                                                <td class="text-right">2</td>
-                                                <td class="text-right">$44.00</td> -->
-                                            </tr>
-                                            <tr>
-                                                <td>2019-03-24 05:53</td>
-                                                <td>Données DSN du mois de janvier 2019 - complément #1</td>
-                                                <td class="text-right">1,241</td>
-                                                <!-- <td class="text-right">$1199.00</td>
-                                                <td class="text-right">1</td>
-                                                <td class="text-right">$1199.00</td> -->
-                                            </tr>
-                                            <tr>
-                                                <td>2019-03-16 07:53</td>
-                                                <td>Données DSN du mois de janvier 2019</td>
-                                                <td class="text-right">59,888</td>
-                                                <!-- <td class="text-right">$10.00</td>
-                                                <td class="text-right">3</td>
-                                                <td class="text-right">$30.00</td> -->
-                                            </tr>
-                                            <tr>
-                                                <td>2019-02-18 16:40</td>
-                                                <td>Données DSN du mois de décembre 2018</td>
-                                                <td class="text-right">63,976</td>
-                                                <!-- <td class="text-right">$199.00</td>
-                                                <td class="text-right">6</td>
-                                                <td class="text-right">$1494.00</td> -->
-                                            </tr>
-                                            <tr>
-                                                <td>2019-02-03 16:21</td>
-                                                <td>Table de correspondance SIRET / succursale</td>
-                                                <td class="text-right">54</td>
-                                                <!-- <td class="text-right">$10.00</td>
-                                                <td class="text-right">3</td>
-                                                <td class="text-right">$30.00</td> -->
-                                            </tr>
-                                            <tr>
-                                                <td>2019-01-13 13:34</td>
-                                                <td>Données DSN du mois de novembre 2018</td>
-                                                <td class="text-right">64,101</td>
-                                                <!-- <td class="text-right">$699.00</td>
-                                                <td class="text-right">1</td>
-                                                <td class="text-right">$699.00</td> -->
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <h2 class="title-1 m-b-25">Top filiales</h2>
-                                <div class="au-card au-card--bg-blue au-card-top-countries m-b-40">
-                                    <div class="au-card-inner">
-                                        <div class="table-responsive">
-                                            <table class="table table-top-countries">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>AXA France IARD</td>
-                                                        <td class="text-right">13,500</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>AXA Assistance</td>
-                                                        <td class="text-right">6,140</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>AXA SERVICES</td>
-                                                        <td class="text-right">2500</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Direct Assurance</td>
-                                                        <td class="text-right">1,400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>AXA Investment Managers</td>
-                                                        <td class="text-right">854</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>AXA Banque</td>
-                                                        <td class="text-right">700</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>AXA ART</td>
-                                                        <td class="text-right">25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>AXA France Vie</td>
-                                                        <td class="text-right">20</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- <div class="row">
                             <div class="col-lg-6">
@@ -1005,8 +894,7 @@
     <script src="vendor/bootstrap-4.1/popper.min.js"></script>
     <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
     <!-- Vendor JS       -->
-    <script src="vendor/slick/slick.min.js">
-    </script>
+    <script src="vendor/slick/slick.min.js"></script>
     <script src="vendor/wow/wow.min.js"></script>
     <script src="vendor/animsition/animsition.min.js"></script>
     <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
@@ -1022,7 +910,7 @@
     <!-- jvectormap -->
     <script src="vendor/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
     <script src="vendor/jvectormap/jquery-jvectormap-fr-mill.js"></script>
-
+    
     <!-- Main JS-->
     <script src="js/main.js"></script>
 
