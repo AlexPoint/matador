@@ -11,11 +11,11 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          labels: ['Sep. 2018', 'Oct. 2018', 'Nov. 2018', 'Déc. 2018', 'Jan. 2019', 'Fev. 2019', 'Mar. 2019'],
           type: 'line',
           datasets: [{
-            data: [78, 81, 80, 45, 34, 12, 40],
-            label: 'Dataset',
+            data: [23972, 23479, 24634, 24747, 25029, 24487, 24268],
+            label: 'Nb d\'employés recensés',
             backgroundColor: 'rgba(255,255,255,.1)',
             borderColor: 'rgba(255,255,255,.55)',
           },]
@@ -77,11 +77,11 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+          labels: ['Sep. 2018', 'Oct. 2018', 'Nov. 2018', 'Déc. 2018', 'Jan. 2019', 'Fev. 2019', 'Mar. 2019'],
           type: 'line',
           datasets: [{
-            data: [1, 18, 9, 17, 34, 22],
-            label: 'Dataset',
+            data: [3.2, 3.2, 3.5, 4.0, 3.9, 4.5, 4.8],
+            label: 'Taux d\'absentéisme moyen',
             backgroundColor: 'transparent',
             borderColor: 'rgba(255,255,255,.55)',
           },]
@@ -148,11 +148,11 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+          labels: ['Fin sep. 2018', 'Fin oct. 2018', 'Fin nov. 2018', 'Fin déc. 2018', 'Fin jan. 2019', 'Fin fev. 2019', 'Fin mar. 2019'],
           type: 'line',
           datasets: [{
-            data: [65, 59, 84, 84, 51, 55],
-            label: 'Dataset',
+            data: [1001, 1057, 1164, 1087, 1006, 1065, 1103],
+            label: 'Nb d\'employés en arrêt (fin du mois)',
             backgroundColor: 'transparent',
             borderColor: 'rgba(255,255,255,.55)',
           },]
@@ -218,11 +218,11 @@
       var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          labels: ['Mai 2018', 'Juin 2018', 'Juil. 2018', 'Aoû 2018', 'Sep. 2018', 'Oct. 2018', 'Nov. 2018', 'Déc. 2018', 'Jan. 2019', 'Fev. 2019', 'Mar. 2019'],
           datasets: [
             {
-              label: "My First dataset",
-              data: [78, 81, 80, 65, 58, 75, 60, 75, 65, 60, 60, 75],
+              label: "Evolution du coût des AT",
+              data: [1001543, 973414, 1254338, 943743, 1170338, 1091092, 1069553, 1371458, 1316702, 1360386],
               borderColor: "transparent",
               borderWidth: "0",
               backgroundColor: "rgba(255,255,255,.3)"
