@@ -4,3 +4,19 @@
 	display: none;
 }
 
+.account-item > .content {
+     margin-left: 0px; 
+}
+
+.account-dropdown .info .content {
+    margin-left: 0px;
+}
+
+.overview-item .text {
+	max-width: 220px;
+}
+
+.copyright img{
+    max-height: 30px;
+    margin-right: 15px;
+}
