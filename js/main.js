@@ -828,6 +828,225 @@
     console.log(error);
   }
 
+  /* Tab "absentéisme" */
+
+  try {
+    //Sales chart
+    var ctx = document.getElementById("absenteism-evolution");
+    if (ctx) {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Avr. 2018", "Mai. 2018", "Juin. 2018", "Juil. 2018", "Aoû. 2018", "Sep. 2018", "Oct. 2018", "Nov. 2018", "Déc. 2018", "Jan. 2019", "Fév. 2019", "Mar. 2019"],
+          type: 'line',
+          defaultFontFamily: 'Poppins',
+          datasets: [{
+            label: "AXA",
+            data: [3.5, 3.6, 3.5, 3.7, 3.6, 3.8, 3.9, 4.2, 3.9, 4.4, 4.6, 4.8],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(220,53,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(220,53,69,0.75)',
+          }, 
+          {
+            label: "Benchmark",
+            data: [3.5, 3.5, 3.4, 3.6, 3.5, 3.6, 3.7, 3.6, 3.6, 3.7, 3.5, 3.7],
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(40,167,69,0.75)',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: 'rgba(40,167,69,0.75)',
+          }]
+        },
+        options: {
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Poppins',
+            bodyFontFamily: 'Poppins',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          legend: {
+            display: false,
+            labels: {
+              usePointStyle: true,
+              fontFamily: 'Poppins',
+            },
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }],
+            yAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: true,
+                labelString: 'Value',
+                fontFamily: "Poppins"
+
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'Normal Legend'
+          }
+        }
+      });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+
+  try {
+    //bar chart
+    var ctx = document.getElementById("absentism-split-nb-day-missing");
+    if (ctx) {
+      ctx.height = 200;
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        defaultFontFamily: 'Poppins',
+        data: {
+          labels: ["Moins de 3j", "4 à 21 jours", "22 à 89 jours", "Plus de 90j"],
+          datasets: [
+            {
+              label: "AXA",
+              data: [0.0715, 0.1463, 0.201, 0.5812],
+              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderWidth: "0",
+              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              fontFamily: "Poppins"
+            },
+            {
+              label: "Benchmark",
+              data: [0.0649, 0.1851, 0.258, 0.4919],
+              borderColor: "rgba(0,0,0,0.09)",
+              borderWidth: "0",
+              backgroundColor: "rgba(0,0,0,0.07)",
+              fontFamily: "Poppins"
+            }
+          ]
+        },
+        options: {
+          legend: {
+            position: 'top',
+            labels: {
+              fontFamily: 'Poppins'
+            }
+
+          },
+          scales: {
+            xAxes: [{
+              ticks: {
+                fontFamily: "Poppins"
+
+              }
+            }],
+            yAxes: [{
+              ticks: {
+                beginAtZero: true,
+                fontFamily: "Poppins"
+              }
+            }]
+          }
+        }
+      });
+    }
+
+
+  } catch (error) {
+    console.log(error);
+  }
+
+  try {
+    //bar chart
+    var ctx = document.getElementById("absentism-split-csp");
+    if (ctx) {
+      ctx.height = 200;
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        defaultFontFamily: 'Poppins',
+        data: {
+          labels: ["Employés - ouvriers", "Professions intermédiaires", "Cadres"],
+          datasets: [
+            {
+              label: "AXA",
+              data: [5.1, 4.9, 3.9],
+              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderWidth: "0",
+              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              fontFamily: "Poppins"
+            },
+            {
+              label: "Benchmark",
+              data: [5.0, 4.1, 3.8],
+              borderColor: "rgba(0,0,0,0.09)",
+              borderWidth: "0",
+              backgroundColor: "rgba(0,0,0,0.07)",
+              fontFamily: "Poppins"
+            }
+          ]
+        },
+        options: {
+          legend: {
+            position: 'top',
+            labels: {
+              fontFamily: 'Poppins'
+            }
+
+          },
+          scales: {
+            xAxes: [{
+              ticks: {
+                fontFamily: "Poppins"
+
+              }
+            }],
+            yAxes: [{
+              ticks: {
+                beginAtZero: true,
+                fontFamily: "Poppins"
+              }
+            }]
+          }
+        }
+      });
+    }
+
+
+  } catch (error) {
+    console.log(error);
+  }
+
   try {
     //Sales chart
     var ctx = document.getElementById("sales-chart");
@@ -1405,7 +1624,7 @@
               {
                 label: 'Professions intermédiaires',
                 data: [8.2],
-                backgroundColor: '#ededed;'
+                backgroundColor: '#b5d4f5;'
               },
               {
                 label: 'Cadres',
@@ -1426,16 +1645,7 @@
               legend: {
                 position: 'right'
               }
-          },
-          plugins: [{
-            beforeInit: function(chart) {
-               chart.data.datasets.forEach(function(e, i, a) {
-                  if (/\n/.test(e.label)) {
-                     a[i].label = e.label.split(/\n/);
-                  }
-               });
-            }
-         }]
+          }
       });
 
       /*var myChart = new Chart(ctx, {
