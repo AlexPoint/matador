@@ -527,7 +527,7 @@
                                             </div>
                                             <div class="text">
                                                 <h2>20,543</h2>
-                                                <span>employés avec plus de 1 an d'ancienneté</span>
+                                                <span>employés de plus de 1 an d'ancienneté</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -543,7 +543,7 @@
                                     <div class="au-card-inner">
                                         <h3 class="title-2 tm-b-5">Sexe</h3>
                                         <div class="row no-gutters">
-                                            <div class="col-xl-6">
+                                            <!-- <div class="col-xl-6">
                                                 <div class="chart-note-wrap">
                                                     <div class="chart-note mr-0 d-block">
                                                         <span class="dot dot--blue"></span>
@@ -554,10 +554,10 @@
                                                         <span>hommes</span>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-xl-6">
+                                            </div> -->
+                                            <div class="col-xl-12">
                                                 <div class="percent-chart">
-                                                    <canvas id="percent-chart-gender"></canvas>
+                                                    <div id="population-pyramid"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -910,6 +910,10 @@
     <!-- jvectormap -->
     <script src="vendor/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
     <script src="vendor/jvectormap/jquery-jvectormap-fr-mill.js"></script>
+    <!-- d3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- popPyramid -->
+    <script src="vendor/popPyramid/popPyramid.js"></script>
     
     <!-- Main JS-->
     <script src="js/main.js"></script>

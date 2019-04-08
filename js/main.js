@@ -331,6 +331,31 @@
       });
     }
 
+    // Population pyramid
+    // data must be in a format with age, male, and female in each object 
+    var exampleData = [{ age: '20 ans et -', male: 10, female: 12 }, 
+    { age: '20 - 24', male: 14, female: 15 }, 
+    { age: '25 - 29', male: 15, female: 18 }, 
+    { age: '30 - 34', male: 18, female: 18 }, 
+    { age: '35 - 39', male: 21, female: 22 }, 
+    {age: '40 - 44', male: 19, female: 24 }, 
+    { age: '45 - 49', male: 15, female: 14 }, 
+    {age: '50 - 54', male: 8, female: 10 }, 
+    { age: '55 - 59', male: 4, female: 5 }, 
+    { age: '60 - 64', male: 3, female: 2 }, 
+    {age: '65 ans et +', male: 2, female: 3 }]; 
+
+    var options = {
+      height: 400,
+      width: 600,
+      style: {
+        leftBarColor: "#229922",
+        rightBarColor: "#992222"
+      }
+    }
+    pyramidBuilder(exampleData, '#population-pyramid', options);
+
+
     // Percent Chart
     var ctx = document.getElementById("percent-chart-gender");
     if (ctx) {
@@ -824,7 +849,8 @@
             pointRadius: 5,
             pointBorderColor: 'transparent',
             pointBackgroundColor: 'rgba(220,53,69,0.75)',
-          }, {
+          }, 
+          {
             label: "Electronics",
             data: [0, 50, 40, 80, 40, 79, 120],
             backgroundColor: 'transparent',
@@ -1578,7 +1604,8 @@
               }
             });
           }
-        }, {
+        }, 
+        {
             offset: 'bottom-in-view'
           });
 
