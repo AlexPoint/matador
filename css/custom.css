@@ -25,3 +25,7 @@
 	height: 250px;
     width: 100%;
 }
+
+.cost-info li {
+	margin-left: 18px;
+}
