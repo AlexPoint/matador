@@ -1344,11 +1344,101 @@
 
   try {
 
-    // single bar chart
+    // stacked bar chart
     var ctx = document.getElementById("csp-split-graph");
     if (ctx) {
+      ctx.height = 200;
+      /*var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+          datasets: [{
+            data: [84.5, 8.2, 7.3],
+            backgroundColor: [
+              "rgba(0, 123, 255,0.9)",
+              "rgba(0, 123, 255,0.5)",
+              "rgba(0,0,0,0.07)"
+            ],
+            hoverBackgroundColor: [
+              "rgba(0, 123, 255,0.9)",
+              "rgba(0, 123, 255,0.5)",
+              "rgba(0,0,0,0.07)"
+            ]
+
+          }],
+          labels: [
+            ["Employés - ouvriers"],
+            ["Professions intermédiaires"],
+            ["Cadres"]
+          ]
+        },
+        options: {
+          legend: {
+            position: 'right',
+            labels: {
+              fontFamily: 'Poppins'
+            }
+
+          },
+          responsive: true
+        },
+          plugins: [{
+            beforeInit: function(chart) {
+               chart.data.datasets.forEach(function(e, i, a) {
+                  if (/\n/.test(e.label)) {
+                     a[i].label = e.label.split(/\n/);
+                  }
+               });
+            }
+         }]
+      });*/
+
       ctx.height = 150;
       var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            datasets: [
+              {
+                label: 'Employés - ouvriers',
+                data: [84.5],
+                backgroundColor: '#1988ff'
+              },
+              {
+                label: 'Professions intermédiaires',
+                data: [8.2],
+                backgroundColor: '#ededed;'
+              },
+              {
+                label: 'Cadres',
+                data: [7.3],
+                backgroundColor: '#7fbdff'
+              }
+            ]
+          },
+          options: {
+              scales: {
+                  xAxes: [{
+                      stacked: true
+                  }],
+                  yAxes: [{
+                      stacked: true
+                  }]
+              },
+              legend: {
+                position: 'right'
+              }
+          },
+          plugins: [{
+            beforeInit: function(chart) {
+               chart.data.datasets.forEach(function(e, i, a) {
+                  if (/\n/.test(e.label)) {
+                     a[i].label = e.label.split(/\n/);
+                  }
+               });
+            }
+         }]
+      });
+
+      /*var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
           labels: ["Cadres", "ETAM", "Ouvriers"],
@@ -1372,12 +1462,14 @@
           },
           scales: {
             xAxes: [{
+              stacked: true,
               ticks: {
                 fontFamily: "Poppins"
 
               }
             }],
             yAxes: [{
+              stacked: true,
               ticks: {
                 beginAtZero: true,
                 fontFamily: "Poppins"
@@ -1385,7 +1477,7 @@
             }]
           }
         }
-      });
+      });*/
     }
 
   } catch (error) {

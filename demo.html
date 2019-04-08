@@ -192,13 +192,13 @@
                             <a href="index.html">
                                 <i class="fas fa-calendar-alt"></i>Situation actuelle</a>
                         </li>
-                        <li>
-                            <a data-toggle="tooltip" data-placement="left" title="En construction">
-                                <i class="fas fa-chart-bar"></i>Absentéisme</a>
-                        </li>
                         <li class="active">
                             <a href="demo.html">
                                 <i class="fas fa-table"></i>Démographie</a>
+                        </li>
+                        <li>
+                            <a href="absenteisme.html">
+                                <i class="fas fa-chart-bar"></i>Absentéisme</a>
                         </li>
                         <li>
                             <a data-toggle="tooltip" data-placement="left" title="En construction">
@@ -490,7 +490,7 @@
                                                 <i class="zmdi zmdi-account-box"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>40,5</h2>
+                                                <h2>43,5</h2>
                                                 <span>ans d'âge moyen</span>
                                             </div>
                                         </div>
@@ -565,20 +565,68 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="au-card m-b-30">
+                                <div class="au-card recent-report">
                                     <div class="au-card-inner">
-                                        <h3 class="title-2 m-b-40">Catégories socioprofessionnelles</h3>
-                                        <canvas id="csp-split-graph"></canvas>
+                                        <h3 class="title-2 m-b-40">Répartition géographique</h3>
+                                        <div id="demo-geo"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="au-card recent-report">
+                            <div class="col-lg-8">
+                                <h2 class="title-1 m-b-25">Catégories socio-professionnelles (CSP)</h2>
+                                <div class="table-responsive table--no-card m-b-40">
+                                    <table class="table table-borderless table-striped table-earning">
+                                        <thead>
+                                            <tr>
+                                                <th>CSP</th>
+                                                <th>Age moyen</th>
+                                                <th>Ancienneté</th>
+                                                <th>Salaire brut</th>
+                                                <!-- <th class="text-right">nb de lignes</th> -->
+                                                <!-- <th class="text-right">quantity</th>
+                                                <th class="text-right">total</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Employés - ouvriers</td>
+                                                <td>42 ans</td>
+                                                <td>14,9 ans</td>
+                                                <td>19 005€</td>
+                                                <!-- <td class="text-right">64,543</td> -->
+                                                <!-- <td class="text-right">$999.00</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">$999.00</td> -->
+                                            </tr>
+                                            <tr>
+                                                <td>Professions intermédiaires</td>
+                                                <td>42 ans</td>
+                                                <td>14,7 ans</td>
+                                                <td>33 712€</td>
+                                                <!-- <td class="text-right">$756.00</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">$756.00</td> -->
+                                            </tr>
+                                            <tr>
+                                                <td>Cadres</td>
+                                                <td>48 ans</td>
+                                                <td>14,1 ans</td>
+                                                <td>66 762€</td>
+                                                <!-- <td class="text-right">$22.00</td>
+                                                <td class="text-right">2</td>
+                                                <td class="text-right">$44.00</td> -->
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="au-card m-b-30">
                                     <div class="au-card-inner">
-                                        <h3 class="title-2 m-b-40">Répartition géographique</h3>
-                                        <div id="demo-geo"></div>
+                                        <h3 class="title-2 m-b-40">Répartition par CSP</h3>
+                                        <canvas id="csp-split-graph"></canvas>
                                     </div>
                                 </div>
                             </div>
