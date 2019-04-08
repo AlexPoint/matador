@@ -1566,8 +1566,8 @@
     // stacked bar chart
     var ctx = document.getElementById("csp-split-graph");
     if (ctx) {
-      ctx.height = 200;
-      /*var myChart = new Chart(ctx, {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
         type: 'pie',
         data: {
           datasets: [{
@@ -1609,9 +1609,9 @@
                });
             }
          }]
-      });*/
+      });
 
-      ctx.height = 150;
+      /*ctx.height = 150;
       var myChart = new Chart(ctx, {
           type: 'bar',
           data: {
@@ -1647,7 +1647,7 @@
               }
           }
       });
-
+*/
       /*var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
