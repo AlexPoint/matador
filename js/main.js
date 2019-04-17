@@ -248,6 +248,76 @@
       });
     }
 
+
+    //WidgetChart 3
+    var ctx = document.getElementById("widget-split-female");
+    if (ctx) {
+      ctx.height = 130;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Fin sep. 2018', 'Fin oct. 2018', 'Fin nov. 2018', 'Fin déc. 2018', 'Fin jan. 2019', 'Fin fev. 2019', 'Fin mar. 2019'],
+          type: 'line',
+          datasets: [{
+            data: [1001, 1057, 1164, 1087, 1006, 1065, 1103],
+            label: 'Nb d\'employés en arrêt (fin du mois)',
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(255,255,255,.55)',
+          },]
+        },
+        options: {
+
+          maintainAspectRatio: false,
+          legend: {
+            display: false
+          },
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Montserrat',
+            bodyFontFamily: 'Montserrat',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          scales: {
+            xAxes: [{
+              gridLines: {
+                color: 'transparent',
+                zeroLineColor: 'transparent'
+              },
+              ticks: {
+                fontSize: 2,
+                fontColor: 'transparent'
+              }
+            }],
+            yAxes: [{
+              display: false,
+              ticks: {
+                display: false,
+              }
+            }]
+          },
+          title: {
+            display: false,
+          },
+          elements: {
+            line: {
+              borderWidth: 1
+            },
+            point: {
+              radius: 4,
+              hitRadius: 10,
+              hoverRadius: 4
+            }
+          }
+        }
+      });
+    }
+
     // Recent Report
     const brandProduct = 'rgba(0,181,233,0.8)'
     const brandService = 'rgba(0,173,95,0.8)'
@@ -845,23 +915,23 @@
             label: "AXA",
             data: [3.5, 3.6, 3.5, 3.7, 3.6, 3.8, 3.9, 4.2, 3.9, 4.4, 4.6, 4.8],
             backgroundColor: 'transparent',
-            borderColor: 'rgba(220,53,69,0.75)',
+            borderColor: 'rgba(0, 123, 255, 0.9)',
             borderWidth: 3,
             pointStyle: 'circle',
             pointRadius: 5,
             pointBorderColor: 'transparent',
-            pointBackgroundColor: 'rgba(220,53,69,0.75)',
+            pointBackgroundColor: 'rgba(0, 123, 255, 0.5)',
           }, 
           {
             label: "Benchmark",
             data: [3.5, 3.5, 3.4, 3.6, 3.5, 3.6, 3.7, 3.6, 3.6, 3.7, 3.5, 3.7],
             backgroundColor: 'transparent',
-            borderColor: 'rgba(40,167,69,0.75)',
+            borderColor: 'rgba(0,0,0,0.09)',
             borderWidth: 3,
             pointStyle: 'circle',
             pointRadius: 5,
             pointBorderColor: 'transparent',
-            pointBackgroundColor: 'rgba(40,167,69,0.75)',
+            pointBackgroundColor: 'rgba(0,0,0,0.07)',
           }]
         },
         options: {
@@ -878,7 +948,7 @@
             intersect: false,
           },
           legend: {
-            display: false,
+            display: true,
             labels: {
               usePointStyle: true,
               fontFamily: 'Poppins',
