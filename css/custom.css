@@ -4,6 +4,10 @@
 	display: none;
 }
 
+.title-1, .title-2, .title-3, .title-4, .title-5, .heading-title {
+	text-transform: none;
+}
+
 .account-item > .content {
      margin-left: 0px; 
 }
