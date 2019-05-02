@@ -15,7 +15,7 @@
           type: 'line',
           datasets: [{
             data: [23972, 23479, 24634, 24747, 25029, 24487, 24268],
-            label: 'Nb d\'employés recensés',
+            label: 'Nb de salariés recensés',
             backgroundColor: 'rgba(255,255,255,.1)',
             borderColor: 'rgba(255,255,255,.55)',
           },]
@@ -152,7 +152,7 @@
           type: 'line',
           datasets: [{
             data: [1001, 1057, 1164, 1087, 1006, 1065, 1103],
-            label: 'Nb d\'employés en arrêt (fin du mois)',
+            label: 'Nb de salariés en arrêt (fin du mois)',
             backgroundColor: 'transparent',
             borderColor: 'rgba(255,255,255,.55)',
           },]
@@ -260,7 +260,7 @@
           type: 'line',
           datasets: [{
             data: [1001, 1057, 1164, 1087, 1006, 1065, 1103],
-            label: 'Nb d\'employés en arrêt (fin du mois)',
+            label: 'Nb de salariés en arrêt (fin du mois)',
             backgroundColor: 'transparent',
             borderColor: 'rgba(255,255,255,.55)',
           },]
