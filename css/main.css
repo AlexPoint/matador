@@ -1992,15 +1992,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p1-gradient-bg, .menu-top li:hover, .primary-btn, .primary-btn2:hover, .banner-area, .single-service:hover .lnr, .about-area .primary-btn2, .related-area .primary-btn2, .single-price:hover .bottom-sec, .single-price:hover .end-sec, .testimonial-area .overlay-bg, .footer-social a:hover, .single-footer-widget .bb-btn, .generic-banner {
-  background-image: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+  /*background-image: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
-  background-image: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+  background-image: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);*/
+  background-image: -moz-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+  background-image: -webkit-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+  background-image: -ms-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
 }
 
 .p1-gradient-color, .single-blog:hover h4 {
-  background: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+  /*background: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
-  background: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+  background: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);*/
+  background-image: -moz-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+  background-image: -webkit-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+  background-image: -ms-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2338,6 +2344,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.single-price .top-left h4 {
+  margin-top: 15px;
+}
+
 @media (max-width: 1024px) {
   .single-price .top-sec br, .single-price .bottom-sec br {
     display: block;
@@ -2620,7 +2630,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-area {
-  padding-top: 100px;
+  padding: 30px 0px;
   background-color: #222222;
 }
 
@@ -2794,7 +2804,8 @@ h6 {
 }
 
 .footer-bottom {
-  padding-top: 80px;
+  /*padding-top: 80px;*/
+  padding-top: 0px;
 }
 
 .footer-text a, .footer-text i {
