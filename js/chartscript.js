@@ -1,5 +1,5 @@
 				
-Highcharts.chart('container', {
+/*Highcharts.chart('container', {
     chart: {
         type: 'column'
     },
@@ -63,4 +63,60 @@ Highcharts.chart('container', {
         data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
 
     }]
-});
+});*/
+
+var ctx = document.getElementById("container");
+if (ctx) {
+  ctx.height = 400;
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    defaultFontFamily: 'Poppins',
+    data: {
+      labels: ['20 ans et -', '20 - 24', '25 - 29', '30 - 34', '35 - 39', '40 - 44', '45 - 49', '50 - 54', '55 - 59', '60 - 64', '65 ans et +'],
+      //labels: ['20 ans et -', '20 - 24', '25 - 29', '30 - 34', '35 - 39', '40 - 44'],
+      datasets: [
+        {
+          label: "Votre entreprise",
+          data: [3.1, 3.2, 3.7, 4.2, 3.9, 4.3, 4.3, 4.5, 4.8, 5.8, 6.5],
+          //data: [3.1, 3.2, 3.7, 4.2, 3.9, 4.3],
+          borderColor: "rgba(0, 123, 255, 0.9)",
+          borderWidth: "0",
+          backgroundColor: "rgba(0, 123, 255, 0.5)",
+          fontFamily: "Poppins"
+        },
+        {
+          label: "Benchmark",
+          data: [3.1, 3.2, 3.5, 3.9, 3.8, 3.8, 3.9, 4.0, 4.2, 4.3, 4.3],
+          //data: [3.1, 3.2, 3.7, 4.2, 3.9, 4.3],
+          borderColor: "rgba(0,0,0,0.09)",
+          borderWidth: "0",
+          backgroundColor: "rgba(0,0,0,0.07)",
+          fontFamily: "Poppins"
+        }
+      ]
+    },
+    options: {
+      legend: {
+        position: 'top',
+        labels: {
+          fontFamily: 'Poppins'
+        }
+
+      },
+      scales: {
+        xAxes: [{
+          ticks: {
+            fontFamily: "Poppins"
+
+          }
+        }],
+        yAxes: [{
+          ticks: {
+            beginAtZero: true,
+            fontFamily: "Poppins"
+          }
+        }]
+      }
+    }
+  });
+}
