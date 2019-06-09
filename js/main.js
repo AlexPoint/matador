@@ -3,6 +3,11 @@
   // USE STRICT
   "use strict";
 
+  // Material Select Initialization
+  $(document).ready(function() {
+    $('.mdb-select').materialSelect();
+  });
+
   try {
     //WidgetChart 1
     var ctx = document.getElementById("widget-employee-headcount");
@@ -1135,6 +1140,125 @@
 
   try {
     //bar chart
+    var ctx = document.getElementById("frequency-stoppage-split");
+    if (ctx) {
+      ctx.height = 200;
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        defaultFontFamily: 'Poppins',
+        data: {
+          labels: ["1er arrêt", "2ème arrêt", "3ème arrêt ou plus"],
+          datasets: [
+            {
+              label: "AXA",
+              data: [81, 15, 4],
+              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderWidth: "0",
+              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              fontFamily: "Poppins"
+            },
+            {
+              label: "Benchmark",
+              data: [90, 8, 2],
+              borderColor: "rgba(0,0,0,0.09)",
+              borderWidth: "0",
+              backgroundColor: "rgba(0,0,0,0.07)",
+              fontFamily: "Poppins"
+            }
+          ]
+        },
+        options: {
+          legend: {
+            position: 'top',
+            labels: {
+              fontFamily: 'Poppins'
+            }
+
+          },
+          scales: {
+            xAxes: [{
+              ticks: {
+                fontFamily: "Poppins"
+
+              }
+            }],
+            yAxes: [{
+              ticks: {
+                beginAtZero: true,
+                fontFamily: "Poppins"
+              }
+            }]
+          }
+        }
+      });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+
+
+  
+  try {
+    //bar chart
+    var ctx = document.getElementById("absenteism-by-seniority");
+    if (ctx) {
+      ctx.height = 200;
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        defaultFontFamily: 'Poppins',
+        data: {
+          labels: ["Moins de 1 an", "Entre 1 et 5 ans", "5 ans ou plus"],
+          datasets: [
+            {
+              label: "AXA",
+              data: [3.9, 4.5, 5.6],
+              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderWidth: "0",
+              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              fontFamily: "Poppins"
+            },
+            {
+              label: "Benchmark",
+              data: [3.8, 4.2, 4.7],
+              borderColor: "rgba(0,0,0,0.09)",
+              borderWidth: "0",
+              backgroundColor: "rgba(0,0,0,0.07)",
+              fontFamily: "Poppins"
+            }
+          ]
+        },
+        options: {
+          legend: {
+            position: 'top',
+            labels: {
+              fontFamily: 'Poppins'
+            }
+
+          },
+          scales: {
+            xAxes: [{
+              ticks: {
+                fontFamily: "Poppins"
+
+              }
+            }],
+            yAxes: [{
+              ticks: {
+                beginAtZero: true,
+                fontFamily: "Poppins"
+              }
+            }]
+          }
+        }
+      });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+
+
+  try {
+    //bar chart
     var ctx = document.getElementById("absentism-split-csp");
     if (ctx) {
       ctx.height = 200;
@@ -1843,7 +1967,7 @@
   try {
 
     // stacked bar chart
-    var ctx = document.getElementById("csp-split-graph");
+    var ctx = document.getElementById("contract-split-graph");
     if (ctx) {
       ctx.height = 150;
       var myChart = new Chart(ctx, {
@@ -1864,9 +1988,9 @@
 
           }],
           labels: [
-            ["Employés - ouvriers"],
-            ["Professions intermédiaires"],
-            ["Cadres"]
+            ["CDI"],
+            ["CDD"],
+            ["CTT"]
           ]
         },
         options: {
