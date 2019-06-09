@@ -790,10 +790,6 @@
       var map = $('#demo-geo').vectorMap('get', 'mapObject');
       var min = map.series.regions[0].scale.minValue;
       var max = map.series.regions[0].scale.maxValue;
-      /*var minColor = map.series.regions[0].scale.getValue(min);
-      $('#demo-geo').append('<div style="background-color:' + minColor + ';">' + min + ' - ' + minColor + '</div>');
-      var maxColor = map.series.regions[0].scale.getValue(max);
-      $('#demo-geo').append('<div style="background-color:' + maxColor + ';">' + max + ' - ' + maxColor + '</div>');*/
 
       var legendHtml = "<div class='my-legend'>\
         <div class='legend-scale'>\
@@ -1380,11 +1376,144 @@
         }
       });
     }
-
-
   } catch (error) {
     console.log(error);
   }
+
+  /*Absenteism rate per department (map) */
+  try {
+      var gdpData = {
+        "FR-01": 0.0882,
+        "FR-02": 0.0648,
+        "FR-03": 0.01485,
+        "FR-04": 0.0513,
+        "FR-05": 0.01125,
+        "FR-06": 0.08055,
+        "FR-07": 0.09,
+        "FR-08": 0.0288,
+        "FR-09": 0.00315,
+        "FR-10": 0.00675,
+        "FR-11": 0.0558,
+        "FR-12": 0.07515,
+        "FR-13": 0.0027,
+        "FR-14": 0.03375,
+        "FR-15": 0.00765,
+        "FR-16": 0.0144,
+        "FR-17": 0.03555,
+        "FR-18": 0.08055,
+        "FR-19": 0.0432,
+        "FR-2A": 0.06435,
+        "FR-2B": 0.08865,
+        "FR-21": 0.05175,
+        "FR-22": 0.0675,
+        "FR-23": 0.05895,
+        "FR-24": 0.03375,
+        "FR-25": 0.06885,
+        "FR-26": 0.0261,
+        "FR-27": 0.0522,
+        "FR-28": 0.0585,
+        "FR-29": 0.0135,
+        "FR-30": 0.0459,
+        "FR-31": 0.00045,
+        "FR-32": 0.0342,
+        "FR-33": 0.0162,
+        "FR-34": 0.01485,
+        "FR-35": 0.0846,
+        "FR-36": 0.06435,
+        "FR-37": 0.0819,
+        "FR-38": 0.054,
+        "FR-39": 0.02835,
+        "FR-40": 0.05085,
+        "FR-41": 0.0747,
+        "FR-42": 0.0594,
+        "FR-43": 0.08325,
+        "FR-44": 0.0495,
+        "FR-45": 0.0441,
+        "FR-46": 0.0837,
+        "FR-47": 0.0063,
+        "FR-48": 0.0621,
+        "FR-49": 0.08865,
+        "FR-50": 0.0342,
+        "FR-51": 0.08685,
+        "FR-52": 0.01755,
+        "FR-53": 0.0081,
+        "FR-54": 0.05715,
+        "FR-55": 0.08955,
+        "FR-56": 0.08415,
+        "FR-57": 0.07245,
+        "FR-58": 0.0144,
+        "FR-59": 0.05805,
+        "FR-60": 0.03915,
+        "FR-61": 0.0855,
+        "FR-62": 0.0324,
+        "FR-63": 0.02925,
+        "FR-64": 0.06705,
+        "FR-65": 0.0225,
+        "FR-66": 0.0873,
+        "FR-67": 0.0603,
+        "FR-68": 0.00765,
+        "FR-69": 0.05895,
+        "FR-70": 0.05175,
+        "FR-71": 0.06705,
+        "FR-72": 0.0045,
+        "FR-73": 0.0657,
+        "FR-74": 0.08865,
+        "FR-75": 0.04275,
+        "FR-76": 0.0693,
+        "FR-77": 0.02295,
+        "FR-78": 0.0216,
+        "FR-79": 0.00855,
+        "FR-80": 0.0603,
+        "FR-81": 0.08505,
+        "FR-82": 0.02025,
+        "FR-83": 0.02475,
+        "FR-84": 0.04275,
+        "FR-85": 0.027,
+        "FR-86": 0.0774,
+        "FR-87": 0.0072,
+        "FR-88": 0.0846,
+        "FR-89": 0.03645,
+        "FR-90": 0.03015,
+        "FR-91": 0.02115,
+        "FR-92": 0.0297,
+        "FR-93": 0.0324,
+        "FR-94": 0.07785,
+        "FR-95": 0.02925,
+      }
+
+      $('#absenteism-geo').vectorMap({
+        map: 'fr_mill',
+        backgroundColor: 'white',
+        series: {
+          regions: [{
+            values: gdpData,
+            scale: ['#ecbabe', '#dc3545']
+          }]
+        },
+        onRegionTipShow: function(e, el, code){
+          el.html(el.html()+' (GDP - '+gdpData[code]+')');
+        }
+      });
+
+      /* Legends are not supported natively by vectorMap (yet) */
+      var map = $('#absenteism-geo').vectorMap('get', 'mapObject');
+      var min = map.series.regions[0].scale.minValue;
+      var max = map.series.regions[0].scale.maxValue;
+
+      var legendHtml = "<div class='my-legend'>\
+        <div class='legend-scale'>\
+          <ul class='legend-labels'>";
+      for(var i = 0; i <= 4; i++){
+        var value = min + i * (max - min) / 4;
+        var color = map.series.regions[0].scale.getValue(value);
+        legendHtml += "<li><span style='background:" + color + ";'></span>" + Math.round(value * 10000) / 100 + "%</li>";
+      }
+      legendHtml += "</ul></div>";
+      $('#absenteism-geo').append(legendHtml);      
+  } catch (error) {
+    console.log(error);
+  }
+
 
   try {
     //bar chart
