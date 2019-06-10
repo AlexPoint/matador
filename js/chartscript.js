@@ -85,7 +85,7 @@ if (ctx) {
           fontFamily: "Poppins"
         },
         {
-          label: "Benchmark",
+          label: "Secteur",
           data: [3.1, 3.2, 3.5, 3.9, 3.8, 3.8, 3.9, 4.0, 4.2, 4.3, 4.3],
           //data: [3.1, 3.2, 3.7, 4.2, 3.9, 4.3],
           borderColor: "rgba(0,0,0,0.09)",

@@ -939,7 +939,7 @@
             pointBackgroundColor: 'rgba(0, 123, 255, 0.5)',
           }, 
           {
-            label: "Benchmark",
+            label: "Secteur",
             data: [3.5, 3.5, 3.4, 3.6, 3.5, 3.6, 3.7, 3.6, 3.6, 3.7, 3.5, 3.7],
             backgroundColor: 'transparent',
             borderColor: 'rgba(0,0,0,0.09)',
@@ -1033,7 +1033,7 @@
               fontFamily: "Poppins"
             },
             {
-              label: "Benchmark",
+              label: "Secteur",
               data: [0.0649, 0.1851, 0.258, 0.4919],
               borderColor: "rgba(0,0,0,0.09)",
               borderWidth: "0",
@@ -1093,7 +1093,7 @@
               fontFamily: "Poppins"
             },
             {
-              label: "Benchmark",
+              label: "Secteur",
               data: [3.1, 3.2, 3.5, 3.9, 3.8, 3.8, 3.9, 4.0, 4.2, 4.3, 4.3],
               borderColor: "rgba(0,0,0,0.09)",
               borderWidth: "0",
@@ -1153,7 +1153,7 @@
               fontFamily: "Poppins"
             },
             {
-              label: "Benchmark",
+              label: "Secteur",
               data: [90, 8, 2],
               borderColor: "rgba(0,0,0,0.09)",
               borderWidth: "0",
@@ -1213,7 +1213,7 @@
               fontFamily: "Poppins"
             },
             {
-              label: "Benchmark",
+              label: "Secteur",
               data: [3.8, 4.2, 4.7],
               borderColor: "rgba(0,0,0,0.09)",
               borderWidth: "0",
@@ -1272,7 +1272,7 @@
               fontFamily: "Poppins"
             },
             {
-              label: "Benchmark",
+              label: "Secteur",
               data: [5.0, 4.1, 3.8],
               borderColor: "rgba(0,0,0,0.09)",
               borderWidth: "0",
