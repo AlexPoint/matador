@@ -40,37 +40,60 @@
 }
 
 .my-legend .legend-title {
-    text-align: left;
-    margin-bottom: 8px;
-    font-weight: bold;
-    font-size: 90%;
-    }
-  .my-legend .legend-scale ul {
-    margin: 0;
-    padding: 0;
+text-align: left;
+margin-bottom: 8px;
+font-weight: bold;
+font-size: 90%;
+}
+.my-legend .legend-scale ul {
+margin: 0;
+padding: 0;
+float: left;
+list-style: none;
+}
+.my-legend .legend-scale ul li {
+display: block;
+float: left;
+width: 50px;
+margin-bottom: 6px;
+text-align: center;
+font-size: 80%;
+list-style: none;
+}
+.my-legend ul.legend-labels li span {
+display: block;
+float: left;
+height: 15px;
+width: 50px;
+}
+.my-legend .legend-source {
+font-size: 70%;
+color: #999;
+clear: both;
+}
+.my-legend a {
+color: #777;
+}
+
+/*Multiselect*/
+#subsidiary-filter-row {
+    margin-bottom: 20px;
+    color: #333 !important;
+}
+.badge {
+    padding: 5px !important;
+    border: 1px solid;
+    margin: 5px;
+}
+
+.dashboardcode-bsmultiselect, .title-bsmultiselect {
     float: left;
-    list-style: none;
-    }
-  .my-legend .legend-scale ul li {
-    display: block;
-    float: left;
-    width: 50px;
-    margin-bottom: 6px;
-    text-align: center;
-    font-size: 80%;
-    list-style: none;
-    }
-  .my-legend ul.legend-labels li span {
-    display: block;
-    float: left;
-    height: 15px;
-    width: 50px;
-    }
-  .my-legend .legend-source {
-    font-size: 70%;
-    color: #999;
-    clear: both;
-    }
-  .my-legend a {
-    color: #777;
-    }
+}
+.title-bsmultiselect{
+    height: 30px;
+    padding-top: 12px;
+}
+ .dashboardcode-bsmultiselect ul {
+    background-color: rgb(229, 229, 229);
+    border-color: rgb(229, 229, 229);
+ }

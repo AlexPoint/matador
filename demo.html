@@ -30,6 +30,8 @@
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
     <link href="vendor/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+    <!-- <link href="vendor/BsMultiSelect/BsMultiSelect.css" rel="stylesheet" media="all"> -->
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
@@ -392,6 +394,21 @@
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12" id="subsidiary-filter-row">
+                                <div class = "title-bsmultiselect">Succursales : </div>
+                                <select name="subsidiaries" id="subsidiary-selector" class="form-control"  multiple="multiple">
+                                    <option value = "AXA France IARD" selected>AXA France IARD</option>
+                                    <option value = "AXA Assistance" selected>AXA Assistance</option>
+                                    <option value = "AXA SERVICES" selected>AXA SERVICES</option>
+                                    <option value = "Direct Assurance" selected>Direct Assurance</option>
+                                    <option value = "AXA Investment Managers" selected>AXA Investment Managers</option>
+                                    <option value = "AXA Banque" selected>AXA Banque</option>
+                                    <option value = "AXA ART" selected>AXA ART</option>
+                                    <option value = "AXA France Vie" selected>AXA France Vie</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
@@ -918,7 +935,11 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <!-- popPyramid -->
     <script src="vendor/popPyramid/popPyramid.js"></script>
-    
+    <!-- BsMultiSelect -->
+    <!-- jQuery & Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="vendor/BsMultiSelect/BsMultiSelect.js"></script>
+        
     
     <!-- Main JS-->
     <script src="js/main.js"></script>
