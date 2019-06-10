@@ -2535,7 +2535,9 @@
       removeSelectedItemButtonClass: 'close',
       filterInputItemClass: '',
       filterInputClass: ''
-    });    
+    });
+
+    $('[data-toggle="tooltip"]').tooltip()
   });
 
 })(jQuery);
