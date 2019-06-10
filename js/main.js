@@ -419,8 +419,8 @@
       height: 400,
       width: 600,
       style: {
-        leftBarColor: "#229922",
-        rightBarColor: "#992222"
+        leftBarColor: "#494df4",
+        rightBarColor: "#c91432"
       }
     }
     pyramidBuilder(exampleData, '#population-pyramid', options);
@@ -778,7 +778,7 @@
         series: {
           regions: [{
             values: gdpData,
-            scale: ['#C8EEFF', '#0071A4']
+            scale: ['#C8EEFF', '#3032c1']
           }]
         },
         onRegionTipShow: function(e, el, code){
@@ -931,23 +931,23 @@
             label: "AXA",
             data: [3.5, 3.6, 3.5, 3.7, 3.6, 3.8, 3.9, 4.2, 3.9, 4.4, 4.6, 4.8],
             backgroundColor: 'transparent',
-            borderColor: 'rgba(0, 123, 255, 0.9)',
+            borderColor: '#3032c1',
             borderWidth: 3,
             pointStyle: 'circle',
             pointRadius: 5,
             pointBorderColor: 'transparent',
-            pointBackgroundColor: 'rgba(0, 123, 255, 0.5)',
+            pointBackgroundColor: '#3032c1',
           }, 
           {
             label: "Secteur",
             data: [3.5, 3.5, 3.4, 3.6, 3.5, 3.6, 3.7, 3.6, 3.6, 3.7, 3.5, 3.7],
             backgroundColor: 'transparent',
-            borderColor: 'rgba(0,0,0,0.09)',
+            borderColor: '#9190ac',
             borderWidth: 3,
             pointStyle: 'circle',
             pointRadius: 5,
             pointBorderColor: 'transparent',
-            pointBackgroundColor: 'rgba(0,0,0,0.07)',
+            pointBackgroundColor: '#9190ac',
           }]
         },
         options: {
@@ -1027,17 +1027,17 @@
             {
               label: "AXA",
               data: [0.0715, 0.1463, 0.201, 0.5812],
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "#3032c1",
               borderWidth: "0",
-              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              backgroundColor: "#3032c1",
               fontFamily: "Poppins"
             },
             {
               label: "Secteur",
               data: [0.0649, 0.1851, 0.258, 0.4919],
-              borderColor: "rgba(0,0,0,0.09)",
+              borderColor: "#9190ac",
               borderWidth: "0",
-              backgroundColor: "rgba(0,0,0,0.07)",
+              backgroundColor: "#9190ac",
               fontFamily: "Poppins"
             }
           ]
@@ -1087,17 +1087,17 @@
             {
               label: "AXA",
               data: [3.1, 3.2, 3.7, 4.2, 3.9, 4.3, 4.3, 4.5, 4.8, 5.8, 6.5],
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "#3032c1",
               borderWidth: "0",
-              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              backgroundColor: "#3032c1",
               fontFamily: "Poppins"
             },
             {
               label: "Secteur",
               data: [3.1, 3.2, 3.5, 3.9, 3.8, 3.8, 3.9, 4.0, 4.2, 4.3, 4.3],
-              borderColor: "rgba(0,0,0,0.09)",
+              borderColor: "#9190ac",
               borderWidth: "0",
-              backgroundColor: "rgba(0,0,0,0.07)",
+              backgroundColor: "#9190ac",
               fontFamily: "Poppins"
             }
           ]
@@ -1147,17 +1147,17 @@
             {
               label: "AXA",
               data: [81, 15, 4],
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "#3032c1",
               borderWidth: "0",
-              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              backgroundColor: "#3032c1",
               fontFamily: "Poppins"
             },
             {
               label: "Secteur",
               data: [90, 8, 2],
-              borderColor: "rgba(0,0,0,0.09)",
+              borderColor: "#9190ac",
               borderWidth: "0",
-              backgroundColor: "rgba(0,0,0,0.07)",
+              backgroundColor: "#9190ac",
               fontFamily: "Poppins"
             }
           ]
@@ -1207,17 +1207,17 @@
             {
               label: "AXA",
               data: [3.9, 4.5, 5.6],
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "#3032c1",
               borderWidth: "0",
-              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              backgroundColor: "#3032c1",
               fontFamily: "Poppins"
             },
             {
               label: "Secteur",
               data: [3.8, 4.2, 4.7],
-              borderColor: "rgba(0,0,0,0.09)",
+              borderColor: "#9190ac",
               borderWidth: "0",
-              backgroundColor: "rgba(0,0,0,0.07)",
+              backgroundColor: "#9190ac",
               fontFamily: "Poppins"
             }
           ]
@@ -1266,17 +1266,17 @@
             {
               label: "AXA",
               data: [5.1, 4.9, 3.9],
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "#3032c1",
               borderWidth: "0",
-              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              backgroundColor: "#3032c1",
               fontFamily: "Poppins"
             },
             {
               label: "Secteur",
               data: [5.0, 4.1, 3.8],
-              borderColor: "rgba(0,0,0,0.09)",
+              borderColor: "#9190ac",
               borderWidth: "0",
-              backgroundColor: "rgba(0,0,0,0.07)",
+              backgroundColor: "#9190ac",
               fontFamily: "Poppins"
             }
           ]
@@ -1606,7 +1606,7 @@
         series: {
           regions: [{
             values: gdpData,
-            scale: ['#ecbabe', '#dc3545']
+            scale: ['#f1afc6', '#c91432']
           }]
         },
         onRegionTipShow: function(e, el, code){
@@ -1648,17 +1648,17 @@
             {
               label: "My First dataset",
               data: [65, 59, 80, 81, 56, 55, 40],
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "#3032c1",
               borderWidth: "0",
-              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              backgroundColor: "#3032c1",
               fontFamily: "Poppins"
             },
             {
               label: "My Second dataset",
               data: [28, 48, 40, 19, 86, 27, 90],
-              borderColor: "rgba(0,0,0,0.09)",
+              borderColor: "#9190ac",
               borderWidth: "0",
-              backgroundColor: "rgba(0,0,0,0.07)",
+              backgroundColor: "#9190ac",
               fontFamily: "Poppins"
             }
           ]
@@ -1718,7 +1718,7 @@
               data: [28, 12, 40, 19, 63, 27, 87],
               borderColor: "rgba(0, 123, 255, 0.7",
               borderWidth: "1",
-              backgroundColor: "rgba(0, 123, 255, 0.5)"
+              backgroundColor: "#3032c1"
             }
           ]
         },
@@ -1765,9 +1765,9 @@
             },
             {
               label: "My Second dataset",
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "#3032c1",
               borderWidth: "1",
-              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              backgroundColor: "#3032c1",
               pointHighlightStroke: "rgba(26,179,148,1)",
               data: [16, 32, 18, 26, 42, 33, 44]
             }
@@ -1830,13 +1830,13 @@
               "rgba(0, 123, 255,0.9)",
               "rgba(0, 123, 255,0.7)",
               "rgba(0, 123, 255,0.5)",
-              "rgba(0,0,0,0.07)"
+              "#9190ac"
             ],
             hoverBackgroundColor: [
               "rgba(0, 123, 255,0.9)",
               "rgba(0, 123, 255,0.7)",
               "rgba(0, 123, 255,0.5)",
-              "rgba(0,0,0,0.07)"
+              "#9190ac"
             ]
 
           }],
@@ -1881,13 +1881,13 @@
               "rgba(0, 123, 255,0.9)",
               "rgba(0, 123, 255,0.7)",
               "rgba(0, 123, 255,0.5)",
-              "rgba(0,0,0,0.07)"
+              "#9190ac"
             ],
             hoverBackgroundColor: [
               "rgba(0, 123, 255,0.9)",
               "rgba(0, 123, 255,0.7)",
               "rgba(0, 123, 255,0.5)",
-              "rgba(0,0,0,0.07)"
+              "#9190ac"
             ]
 
           }],
@@ -1971,14 +1971,14 @@
           datasets: [{
             data: [84.5, 8.2, 7.3],
             backgroundColor: [
-              "rgba(0, 123, 255,0.9)",
-              "rgba(0, 123, 255,0.5)",
-              "rgba(0,0,0,0.07)"
+              "#00008f",
+              "#3b3fd8",
+              "#b5d0ee"
             ],
             hoverBackgroundColor: [
-              "rgba(0, 123, 255,0.9)",
-              "rgba(0, 123, 255,0.5)",
-              "rgba(0,0,0,0.07)"
+              "#00005b",
+              "#3032c1",
+              "#00adc6"
             ]
 
           }],
@@ -2054,9 +2054,9 @@
             {
               label: "CSP",
               data: [34, 40, 26],
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "#3032c1",
               borderWidth: "0",
-              backgroundColor: "rgba(0, 123, 255, 0.5)"
+              backgroundColor: "#3032c1"
             }
           ]
         },
@@ -2537,7 +2537,7 @@
       filterInputClass: ''
     });
 
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
   });
 
 })(jQuery);

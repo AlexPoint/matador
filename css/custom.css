@@ -1,5 +1,11 @@
 /* Stylesheet specific to Matador's needs */
-
+.navbar-brand img {
+    max-height: 30px;
+}
+.navbar-brand {
+    color: #777 !important;
+    font-weight: 500;
+}
 .hide {
 	display: none;
 }
@@ -80,10 +86,12 @@ color: #777;
     margin-bottom: 20px;
     color: #333 !important;
 }
-.badge {
-    padding: 5px !important;
+#subsidiary-filter-row .badge {
+    padding: 10px !important;
     border: 1px solid;
     margin: 5px;
+    background-color: #027180;
+    color: white;
 }
 
 .dashboardcode-bsmultiselect, .title-bsmultiselect {
@@ -91,7 +99,7 @@ color: #777;
 }
 .title-bsmultiselect{
     height: 30px;
-    padding-top: 12px;
+    padding-top: 18px;
 }
  .dashboardcode-bsmultiselect ul {
     background-color: rgb(229, 229, 229);

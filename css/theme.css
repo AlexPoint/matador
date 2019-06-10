@@ -3142,27 +3142,27 @@ section {
 }
 
 .overview-item--c1 {
-    background-image: -moz-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
-    background-image: -webkit-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
-    background-image: -ms-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+    background-image: -moz-linear-gradient(90deg, #b5d0ee 0%, #3032c1 50%);
+    background-image: -webkit-linear-gradient(90deg, #b5d0ee 0%, #3032c1 50%);
+    background-image: -ms-linear-gradient(90deg, #b5d0ee 0%, #3032c1 50%);
 }
 
 .overview-item--c2 {
-    background-image: -moz-linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
-    background-image: -webkit-linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
-    background-image: -ms-linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+    background-image: -moz-linear-gradient(90deg, #9fd9b4 0%, #3c8f0b 50%);
+    background-image: -webkit-linear-gradient(90deg, #9fd9b4 0%, #3c8f0b 50%);
+    background-image: -ms-linear-gradient(90deg, #9fd9b4 0%, #3c8f0b 50%);
 }
 
 .overview-item--c3 {
-    background-image: -moz-linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
-    background-image: -webkit-linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
-    background-image: -ms-linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+    background-image: -moz-linear-gradient(90deg, #f1afc6 0%, #c91432 50%);
+    background-image: -webkit-linear-gradient(90deg, #f1afc6 0%, #c91432 50%);
+    background-image: -ms-linear-gradient(90deg, #f1afc6 0%, #c91432 50%);
 }
 
 .overview-item--c4 {
-    background-image: -moz-linear-gradient(90deg, #45b649 0%, #dce35b 100%);
-    background-image: -webkit-linear-gradient(90deg, #45b649 0%, #dce35b 100%);
-    background-image: -ms-linear-gradient(90deg, #45b649 0%, #dce35b 100%);
+    background-image: -moz-linear-gradient(90deg, #fcd385 0%, #d96d14 50%);
+    background-image: -webkit-linear-gradient(90deg, #fcd385 0%, #d96d14 50%);
+    background-image: -ms-linear-gradient(90deg, #fcd385 0%, #d96d14 50%);
 }
 
 .overview-box .icon {
@@ -3292,9 +3292,9 @@ section {
 }
 
 .au-card--bg-blue {
-    background-image: -moz-linear-gradient(90deg, #396afc 0%, #2948ff 100%);
-    background-image: -webkit-linear-gradient(90deg, #396afc 0%, #2948ff 100%);
-    background-image: -ms-linear-gradient(90deg, #396afc 0%, #2948ff 100%);
+    background-image: -moz-linear-gradient(90deg, #494df4 0%, #3032c1 100%);
+    background-image: -webkit-linear-gradient(90deg, #494df4 0%, #3032c1 100%);
+    background-image: -ms-linear-gradient(90deg, #494df4 0%, #3032c1 100%);
 }
 
 .au-card-top-countries {

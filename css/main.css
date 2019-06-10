@@ -136,7 +136,7 @@ h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 36px;
+  font-size: 36px;²
 }
 
 h2, .h2 {
@@ -1995,18 +1995,18 @@ h1, h2, h3, h4, h5, h6 {
   /*background-image: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background-image: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);*/
-  background-image: -moz-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
-  background-image: -webkit-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
-  background-image: -ms-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+  background-image: -moz-linear-gradient(90deg, #3032c1 50%, #b5d0ee 100%);
+  background-image: -webkit-linear-gradient(90deg, #3032c1 50%, #b5d0ee 100%);
+  background-image: -ms-linear-gradient(90deg, #3032c1 50%, #b5d0ee 100%);
 }
 
 .p1-gradient-color, .single-blog:hover h4 {
   /*background: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);*/
-  background-image: -moz-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
-  background-image: -webkit-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
-  background-image: -ms-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+  background-image: -moz-linear-gradient(90deg, #3032c1 50%, #b5d0ee 100%);
+  background-image: -webkit-linear-gradient(90deg, #3032c1 50%, #b5d0ee 100%);
+  background-image: -ms-linear-gradient(90deg, #3032c1 50%, #b5d0ee 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
