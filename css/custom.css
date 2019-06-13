@@ -109,3 +109,9 @@ color: #777;
  #rgpd-icon {
     max-height: 50px;
  }
+
+ #trial .row .primary-btn {
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 30px !important;
+ }
