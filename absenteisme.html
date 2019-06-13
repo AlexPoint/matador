@@ -392,6 +392,21 @@
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12" id="subsidiary-filter-row">
+                                <div class = "title-bsmultiselect">Succursales : </div>
+                                <select name="subsidiaries" id="subsidiary-selector" class="form-control"  multiple="multiple">
+                                    <option value = "AXA France IARD" selected>AXA France IARD</option>
+                                    <option value = "AXA Assistance" selected>AXA Assistance</option>
+                                    <option value = "AXA SERVICES" selected>AXA SERVICES</option>
+                                    <option value = "Direct Assurance" selected>Direct Assurance</option>
+                                    <option value = "AXA Investment Managers" selected>AXA Investment Managers</option>
+                                    <option value = "AXA Banque" selected>AXA Banque</option>
+                                    <option value = "AXA ART" selected>AXA ART</option>
+                                    <option value = "AXA France Vie" selected>AXA France Vie</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="row m-t-25">
                             <div class="col-sm-6 col-lg-3">
                                 <div class="overview-item overview-item--c1">
@@ -469,7 +484,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Comparer votre absentéisme</h2>
+                                    <h2 class="title-1">Evolution</h2>
                                     <!-- <button class="au-btn au-btn-icon au-btn--blue">
                                         <i class="zmdi zmdi-plus"></i>add item</button> -->
                                 </div>
@@ -501,20 +516,56 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                        <h3 class="title-2 m-b-40">Répartition des journées d'absences selon la durée de l'arrêt</h3>
-                                        <canvas id="absentism-split-nb-day-missing"></canvas>
-                                    </div>
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Par variable démographique</h2>
+                                    <!-- <button class="au-btn au-btn-icon au-btn--blue">
+                                        <i class="zmdi zmdi-plus"></i>add item</button> -->
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-lg-6">
                                 <div class="au-card m-b-30">
                                     <div class="au-card-inner">
                                         <h3 class="title-2 m-b-40">Taux d'absentéisme selon l'âge du salarié</h3>
                                         <canvas id="absentism-split-age"></canvas>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Taux d'absentéisme selon la CSP</h3>
+                                        <canvas id="absentism-split-csp"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class= "row">
+                            <div class="col-lg-6">
+                                <div class="au-card recent-report">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Taux d'absentésime par département</h3>
+                                        <div id="absenteism-geo"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Taux d'absentéisme selon l'ancienneté</h3>
+                                        <canvas id="absenteism-by-seniority"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Selon le type d'arrêt</h2>
+                                    <!-- <button class="au-btn au-btn-icon au-btn--blue">
+                                        <i class="zmdi zmdi-plus"></i>add item</button> -->
                                 </div>
                             </div>
                         </div>
@@ -572,8 +623,8 @@
                             <div class="col-lg-6">
                                 <div class="au-card m-b-30">
                                     <div class="au-card-inner">
-                                        <h3 class="title-2 m-b-40">Taux d'absentéisme selon la CSP</h3>
-                                        <canvas id="absentism-split-csp"></canvas>
+                                        <h3 class="title-2 m-b-40">Répartition des journées d'absences selon la durée de l'arrêt</h3>
+                                        <canvas id="absentism-split-nb-day-missing"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -584,24 +635,6 @@
                                     <div class="au-card-inner">
                                         <h3 class="title-2 m-b-40">Fréquence des arrêts pour un même salarié</h3>
                                         <canvas id="frequency-stoppage-split"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                        <h3 class="title-2 m-b-40">Taux d'absentéisme selon l'ancienneté</h3>
-                                        <canvas id="absenteism-by-seniority"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class= "row">
-                            <div class="col-lg-6">
-                                <div class="au-card recent-report">
-                                    <div class="au-card-inner">
-                                        <h3 class="title-2 m-b-40">Taux d'absentésime par département</h3>
-                                        <div id="absenteism-geo"></div>
                                     </div>
                                 </div>
                             </div>
@@ -673,6 +706,10 @@
     <!-- popPyramid -->
     <script src="vendor/popPyramid/popPyramid.js"></script>
     
+    <!-- jQuery & Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="vendor/BsMultiSelect/BsMultiSelect.js"></script>
+            
     
     <!-- Main JS-->
     <script src="js/main.js"></script>

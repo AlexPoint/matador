@@ -929,7 +929,7 @@
           defaultFontFamily: 'Poppins',
           datasets: [{
             label: "AXA",
-            data: [3.5, 3.6, 3.5, 3.7, 3.6, 3.8, 3.9, 4.2, 3.9, 4.4, 4.6, 4.8],
+            data: [3.5, 3.6, 3.5, 3.7, 3.6, 3.8, 3.9, 4.2, 4.3, 4.2, 4.1, 4.1],
             backgroundColor: 'transparent',
             borderColor: '#3032c1',
             borderWidth: 3,
