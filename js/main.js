@@ -928,8 +928,8 @@
           type: 'line',
           defaultFontFamily: 'Poppins',
           datasets: [{
-            label: "AXA",
-            data: [3.5, 3.6, 3.5, 3.7, 3.6, 3.8, 3.9, 4.2, 4.3, 4.2, 4.1, 4.1],
+            label: "Entreprise",
+            data: [3.52, 3.53, 3.55, 3.55, 3.57, 3.58, 3.6, 3.62, 3.68, 3.72, 3.73, 3.73],
             backgroundColor: 'transparent',
             borderColor: '#3032c1',
             borderWidth: 3,
@@ -940,7 +940,7 @@
           }, 
           {
             label: "Secteur",
-            data: [3.5, 3.5, 3.4, 3.6, 3.5, 3.6, 3.7, 3.6, 3.6, 3.7, 3.5, 3.7],
+            data: [3.55, 3.56, 3.55, 3.57, 3.57, 3.56, 3.57, 3.58, 3.58, 3.59, 3.6, 3.6],
             backgroundColor: 'transparent',
             borderColor: '#9190ac',
             borderWidth: 3,
@@ -993,7 +993,7 @@
               },
               scaleLabel: {
                 display: true,
-                labelString: 'Value',
+                labelString: '% absentéisme',
                 fontFamily: "Poppins"
 
               },
@@ -1025,7 +1025,7 @@
           labels: ["Moins de 3j", "4 à 21 jours", "22 à 89 jours", "Plus de 90j"],
           datasets: [
             {
-              label: "AXA",
+              label: "Entreprise",
               data: [0.0715, 0.1463, 0.201, 0.5812],
               borderColor: "#3032c1",
               borderWidth: "0",
@@ -1085,7 +1085,7 @@
           labels: ['20 ans et -', '20 - 24', '25 - 29', '30 - 34', '35 - 39', '40 - 44', '45 - 49', '50 - 54', '55 - 59', '60 - 64', '65 ans et +'],
           datasets: [
             {
-              label: "AXA",
+              label: "Entreprise",
               data: [3.1, 3.2, 3.7, 4.2, 3.9, 4.3, 4.3, 4.5, 4.8, 5.8, 6.5],
               borderColor: "#3032c1",
               borderWidth: "0",
@@ -1145,7 +1145,7 @@
           labels: ["1er arrêt", "2ème arrêt", "3ème arrêt ou plus"],
           datasets: [
             {
-              label: "AXA",
+              label: "Entreprise",
               data: [81, 15, 4],
               borderColor: "#3032c1",
               borderWidth: "0",
@@ -1205,7 +1205,7 @@
           labels: ["Moins de 1 an", "Entre 1 et 5 ans", "5 ans ou plus"],
           datasets: [
             {
-              label: "AXA",
+              label: "Entreprise",
               data: [3.9, 4.5, 5.6],
               borderColor: "#3032c1",
               borderWidth: "0",
@@ -1264,7 +1264,7 @@
           labels: ["Employés - ouvriers", "Professions intermédiaires", "Cadres"],
           datasets: [
             {
-              label: "AXA",
+              label: "Entreprise",
               data: [5.1, 4.9, 3.9],
               borderColor: "#3032c1",
               borderWidth: "0",
