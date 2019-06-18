@@ -929,7 +929,7 @@
           defaultFontFamily: 'Poppins',
           datasets: [{
             label: "Entreprise",
-            data: [3.52, 3.53, 3.55, 3.55, 3.57, 3.58, 3.6, 3.62, 3.68, 3.72, 3.73, 3.73],
+            data: [3.56, 3.56, 3.56, 3.58, 3.59, 3.59, 3.6, 3.62, 3.68, 3.72, 3.73, 3.73],
             backgroundColor: 'transparent',
             borderColor: '#3032c1',
             borderWidth: 3,
@@ -948,6 +948,115 @@
             pointRadius: 5,
             pointBorderColor: 'transparent',
             pointBackgroundColor: '#9190ac',
+          }]
+        },
+        options: {
+          responsive: true,
+          tooltips: {
+            mode: 'index',
+            titleFontSize: 12,
+            titleFontColor: '#000',
+            bodyFontColor: '#000',
+            backgroundColor: '#fff',
+            titleFontFamily: 'Poppins',
+            bodyFontFamily: 'Poppins',
+            cornerRadius: 3,
+            intersect: false,
+          },
+          legend: {
+            display: true,
+            labels: {
+              usePointStyle: true,
+              fontFamily: 'Poppins',
+            },
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }],
+            yAxes: [{
+              display: true,
+              gridLines: {
+                display: false,
+                drawBorder: false
+              },
+              scaleLabel: {
+                display: true,
+                labelString: '% absentéisme',
+                fontFamily: "Poppins"
+
+              },
+              ticks: {
+                fontFamily: "Poppins"
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'Normal Legend'
+          }
+        }
+      });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+
+
+  try {
+    //Sales chart
+    var ctx = document.getElementById("absenteism-evolution-yoy");
+    if (ctx) {
+      ctx.height = 150;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Jan.", "Fév.", "Mar.", "Avr.", "Mai.", "Juin.", "Juil.", "Aoû.", "Sep.", "Oct.", "Nov.", "Déc."],
+          type: 'line',
+          defaultFontFamily: 'Poppins',
+          datasets: [{
+            label: "2019",
+            data: [3.72, 3.73, 3.73],
+            backgroundColor: 'transparent',
+            borderColor: '#3c8f0b',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: '#3c8f0b',
+          }, 
+          {
+            label: "2018",
+            data: [3.55, 3.56, 3.55, 3.56, 3.56, 3.56, 3.58, 3.59, 3.59, 3.6, 3.62, 3.68],
+            backgroundColor: 'transparent',
+            borderColor: '#c91432',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: '#c91432',
+          }, 
+          {
+            label: "2017",
+            data: [3.53, 3.53, 3.52, 3.53, 3.54, 3.55, 3.55, 3.54, 3.55, 3.55, 3.54, 3.54],
+            backgroundColor: 'transparent',
+            borderColor: '#d96d14',
+            borderWidth: 3,
+            pointStyle: 'circle',
+            pointRadius: 5,
+            pointBorderColor: 'transparent',
+            pointBackgroundColor: '#d96d14',
           }]
         },
         options: {
